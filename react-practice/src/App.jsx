@@ -6,6 +6,12 @@ import Prop from './Prop'   // Import Prop (which uses User)
 import GetInput from './GetInput'
 import CheckBoxes from './CheckBoxes'
 import RadioAndDropDown from './RadioAndDropDown'
+import ArrayLoop from './ArrayLoop'
+import ForClockCall from './ForClockCall'
+import UseEffectEx from './UseEffectEx'
+import CounterCall from './CounterCall'
+
+
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -13,7 +19,7 @@ function App() {
   return (
     <>
       <h1>Counter Val : {counter}</h1>
-      <button onClick={() => setCounter(counter + 1)}>Increase</button>
+      <button  onClick={() => setCounter(counter + 1)}>Increase</button>
       <button onClick={() => setCounter(counter - 1)}>Decrease</button>
 
       <hr />
@@ -28,15 +34,28 @@ function App() {
       <hr />
       <br />
       <GetInput/>
-     
+      
       <hr />
       <br />
        <CheckBoxes/>
        <hr />
       <br />
        <RadioAndDropDown/>
+       <hr />
+      <br />
+       <ArrayLoop/>
+       <hr />
+      <br />
+      <ForClockCall/>
+      <hr />
+      <br />
+      <UseEffectEx/>
+       <hr />
+      <br />
+      <CounterCall/>
     </>
   )
 }
 
-export default App
+
+ export default App
